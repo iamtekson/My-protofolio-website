@@ -1,0 +1,304 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	color: #222;
+}
+*{
+	box-sizing: border-box;
+}
+.padding{
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+
+/*navigation*/
+.navbar{
+	padding: .8rem;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+	font-size: 1.1em !important;
+	text-transform: uppercase;
+}
+.heading{
+	margin-top: 3rem;
+	font-family: 'Alegreya', serif;
+}
+
+.main-1{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-image: url('../img/222.jpg');
+	background-size: cover;
+	background-repeat: none;
+	background-position: center;
+}
+.main-2{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+	transform: translateX(-5%);
+}
+.my-skills{
+	background-image: url(../img/my-skill.jpg);
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-position: bottom;
+}
+.my-interests{
+	background-image: url(../img/my-skill.jpg);
+	background-attachment: fixed;
+	background-repeat: none;
+	background-size: cover;
+	background-position: bottom;
+}
+.modal-body img{
+	width: 100%;
+	height: 100%;
+}
+.fa-code,
+.fa-camera,
+.fa-music,
+.fa-book,
+.fa-plane,
+.fa-gamepad{
+	font-size: 80px;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 100%;
+}
+
+
+#contact .well{
+    margin-top:30px;
+}
+input[type="text"]  { border: none ;}
+input[type="tel"]  { border: none ;}
+input[type="email"]  { border: none ;}
+
+
+
+#contact .form-control{
+    border-radius: 0;
+    border-bottom: 2px solid #111;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}   
+
+.social a{
+	font-size: 4.5rem;
+	padding: 3rem; 
+}
+.fa-facebook{
+	color: #3b5998;
+}
+.fa-twitter{
+	color: #00aced;
+}
+.fa-instagram{
+	color: #517fa8;
+}
+.fa-google-plus-g{
+	color: #dd4b39;
+}
+.fa-youtube{
+	color: #bb0000;
+}
+.fa-github{
+    color: #3e2c00;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-google-plus-g:hover,
+.fa-youtube:hover,
+.fa-github:hover{
+	color: #d5d5d5;
+}
+
+
+
+footer{
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+}
+hr.light{
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+footer a{
+	color: #d5d5d5;
+}
+.m-footer a{
+	color: #d5d5d5;
+}
+hr.light-1{
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+
+/* Media Quaries */
+@media (max-width: 992px) {
+	.main-2 h3{
+		font-size: 1.5rem;
+	}
+	.main-2 h1{
+		font-size: 2rem;
+	}
+	.main-2 p{
+		font-size: .8rem;
+	}
+	.progress-left{
+		padding: 0 1rem 1rem 3rem;
+	}
+	.progress-right{
+		padding: 0 0 1rem 1rem;
+	}
+	.social a{
+	font-size: 3.5rem;
+	padding: 2rem; 
+}
+}
+
+
+@media (max-width: 768px){
+	.btn{
+		font-size: 70%;
+	}
+	.padding{
+		padding-top: .8rem;
+		padding-bottom: .8rem;
+	}
+	.heading{
+		font-size: 200%;
+	}
+	.second h4{
+		font-size: 140%;
+	}
+	.second p{
+		font-size: 90%;
+	}
+	.main-2 h3{
+		font-size: 1.3rem;
+	}
+	.main-2 h1{
+		font-size: 1.5rem;
+	}
+	.main-2 p{
+		font-size: .5rem;
+	}
+	.fa-code,
+	.fa-camera,
+	.fa-music,
+	.fa-book,
+	.fa-plane,
+	.fa-gamepad{
+		font-size: 30px;
+	}
+	.my-interests-1{
+		font-size: .8rem;
+	}
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+	.progress-left, .progress-right{
+		padding: 1rem;
+		font-size: 90%;
+	}
+	.social a{
+	font-size: 2.5rem;
+	padding: 1.2rem; 
+	}
+}
+
+
+@media (max-width: 576px){
+	.main-2 h3{
+		font-size: 1rem;
+	}
+	.main-2 h1{
+		font-size: 1.2rem;
+	}
+	.main-2 p{
+		font-size: .4rem;
+	}
+	.social a{
+	font-size: 2rem;
+	padding: .7rem; 
+	}
+}
+
+
+/* Default Settings*/
+/*Firefox Bug Fix--*/
+.carousel-item{
+	transition: ~webkit~transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform o.5s ease, ~webkit-transform 0.5s ease;
+	~webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+/*Fixed Background Image --*/
+figure{
+	position: relative;
+	width: 100%;
+	height: 60%;
+	margin: 0 !important;
+}
+.fixed-wrap{
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+[class*="col-"] {
+	padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
