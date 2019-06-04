@@ -48,7 +48,7 @@ html, body{
 	transform: translateX(-5%);
 }
 .my-skills{
-	background-image: url(../img/my-skill.jpg);
+	background-image: url(../img/my-skill1.jpg);
 	background-attachment: fixed;
 	background-repeat: none;
 	background-size: cover;
@@ -65,6 +65,9 @@ html, body{
 	width: 100%;
 	height: 100%;
 }
+.modal-content a{
+	margin: 1%;
+}
 .fa-code,
 .fa-camera,
 .fa-music,
@@ -77,7 +80,12 @@ html, body{
 	width: 100%;
 	height: 100%;
 }
-
+.youtube{
+	padding-bottom: 3%;
+}
+.udemy{
+	padding-bottom: 3%;
+}
 
 #contact .well{
     margin-top:30px;
@@ -131,7 +139,12 @@ input[type="email"]  { border: none ;}
 .research {
 	position: relative;
 	width: 100%;
-	height: 640px;
+	height: 100%;
+}
+.blog{
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
 .not-reached {
 	text-align: center;
@@ -145,6 +158,9 @@ input[type="email"]  { border: none ;}
 	/* background-color: #e6e2eb; */
 	/* border: 1px solid #aaa; */
 	margin: 0 2px 0 0; 
+}
+.articles-main a{
+	margin: 10px 0 10px 0;
 }
 .articles-side {
 	background: #e6e2eb;

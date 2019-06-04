@@ -49,10 +49,10 @@
           </li>
           <li class="nav-item">
             <div class="dropdown">
-              <a class="dropdown-toggle nav-link" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="publication.html">
+              <a class="dropdown-toggle nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" href="publication.html">
                 Publications
-            </a>
+              </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item nav-link" href="research.html">Research</a>
                 <a class="dropdown-item nav-link" href="articles.html">Articles</a>
@@ -144,9 +144,10 @@
 
 
   <!--My Skills-->
-  <div class="my-skills padding" id="my-skill">
-    <div class="container-fluid ">
+  <!-- <div class="my-skills padding" id="my-skill">
+    <div class="container">
       <h1 class="text-primary text-center heading wow fadeInUp">My Skills</h1>
+      <h3 class="text-primary">FrontEnd</h3>
       <div class="row">
         <div class="progress-left progress-lg col-md-6 wow slideInLeft" data-wow-delay=".1s">
           <div class="progress-bar bg-primary" style="width: 90%;"> HTML (90%)</div>
@@ -157,6 +158,7 @@
         <div class="progress-left progress-lg col-md-6 wow slideInLeft" data-wow-delay=".5s">
           <div class="progress-bar bg-warning" style="width: 80%;"> Bootstrap (80%)</div>
         </div>
+        <h3>BackEnd</h3>
         <div class="progress-right progress-lg col-md-6 wow slideInLeft" data-wow-delay=".7s">
           <div class="progress-bar bg-success" style="width: 60%;"> WordPress (60%)</div>
         </div>
@@ -165,23 +167,71 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+
+  <div class="my-skills padding" id="my-skill">
+    <div class="container">
+      <h1 class="text-primary text-center heading wow fadeInUp">Top Skills</h1>
+      <ul>
+        <a href="#">
+          <li>
+            <h3 class="text-light">Geographic Information System (GIS)</h3>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h3 class="text-light">Python</h3>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h3 class="text-light">Django</h3>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h3 class="text-light">JavaScript</h3>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h3 class="text-light">Leaflet</h3>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h3 class="text-light">HTML/CSS/Bootstrap</h3>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h3 class="text-light">Git and Github</h3>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h3 class="text-light">Remote Sensing</h3>
+          </li>
+        </a>
+      </ul>
+    </div>
   </div>
 
 
 
 
 
-
+  <!-- main works section -->
   <div class="container padding" id="work">
-    <h1 class="text-primary text-center heading wow fadeInUp">My Works</h1>
+    <h1 class="text-primary text-center heading wow fadeInUp">Main Works</h1>
     <div class="row">
       <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
         <div class="card" style="min-width: 18rem;">
-          <img class="card-img-top" src="img/gesan.png" alt="Card image cap">
+          <img class="card-img-top" src="img/web-mapping.JPG" alt="Web-mapping">
           <div class="card-body">
-            <h5 class="card-title">Gesan Website</h5>
-            <p class="card-text">I just build the website for Geomatics Engineering Student Association of Nepal
-              (GESAN). It is really cool website That I ever made. It is ....</p>
+            <h5 class="card-title">Web-Mapping</h5>
+            <p class="card-text">As I am from GIS background, I love to do spatial operations. I made a web-map for utility management purpose. This webmap is made by ...</p>
             <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Get More</a>
           </div>
         </div>
@@ -194,19 +244,16 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">Gesan Website</h4>
+              <h4 class="modal-title">Web-Mapping</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
-              <p>I just build the website for Geomatics Engineering Student Association of Nepal (GESAN). It is really
-                cool website That I ever made. It is fully responsive layout. But some content of the website is full
-                filled with some dummy texts.</p>
-              <img src="img/gesan.png">
-              <a href="http://gesanwrc.ml" class="btn btn-primary mt-2">Visit Site</a>
-
+              <p>As I am from GIS background, I love to do spatial operations. I made a web-map for utility management purpose. This webmap is made with the help of html, css, javascript (leaflet.js) for frontend and Django for backend. I am currently working in this project.</p>
+              <img src="img/web-mapping.JPG">
             </div>
+            <a href="https://github.com/iamtekson/Utility-Networks-Management-" target="_blank" class="btn btn-success mt-2">View git repo</a>
 
             <!-- Modal footer -->
             <div class="modal-footer">
@@ -219,11 +266,10 @@
 
       <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
         <div class="card" style="min-width: 18rem;">
-          <img class="card-img-top" src="img/position.png" alt="Card image cap">
+          <img class="card-img-top" src="img/real-estate.JPG" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Position Finder</h5>
-            <p class="card-text">This program allow us to find out our location on the basis of lattitude and longitude.
-              It is very simple and easy to use. it...</p>
+            <h5 class="card-title">Real Estate Website backend</h5>
+            <p class="card-text">For the practice purpose, I had completed the backend of the real estate website. In this project, Django was used for backend. With the help of ...</p>
             <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Get More</a>
           </div>
         </div>
@@ -246,9 +292,9 @@
               <p>This program allow us to find out our location on the basis of lattitude and longitude. It is very
                 simple and easy to use. It gives the instant coordinate of your device. Here I use some javascript code
                 to finding out the location.</p>
-              <img src="img/position.png">
-              <a href="https://getcoordinate.000webhostapp.com" class="btn btn-primary mt-2">Visit Site</a>
+              <img src="img/real-estate.JPG">
             </div>
+            <a href="https://github.com/iamtekson/Online-house-purchasing-website" class="btn btn-success mt-2">View Git Repo</a>
 
             <!-- Modal footer -->
             <div class="modal-footer">
@@ -258,14 +304,15 @@
           </div>
         </div>
       </div>
+      
+
 
       <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
         <div class="card" style="min-width: 18rem;">
-          <img class="card-img-top" src="img/coding.jpg" alt="Card image cap">
+          <img class="card-img-top" src="img/gesan.png" alt="GESAN website">
           <div class="card-body">
-            <h5 class="card-title">Other Practices</h5>
-            <p class="card-text">Coding is my passion. I continue my different projects on different type of website
-              development works. It feels me good and energetic...</p>
+            <h5 class="card-title">Gesan Website Template</h5>
+            <p class="card-text">This is the template of the Geomatics Engineering Student's Association Nepal (GESAN) website template. at the request of GESAN, ....</p>
             <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Get More</a>
           </div>
         </div>
@@ -281,18 +328,17 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Other practices</h4>
+          <h4 class="modal-title">Gesan Website Template</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          <p>Coding is my passion. I continue my different projects on different type of website development works. It
-            feels me good and energetic. I spend much of my times to take some research on coding. I am doing some
-            interesting programs on Html,css and javascript. I love to design the website with some animation. As the
-            student of Geomatics Engineering student, I love to do some mapping projects.</p>
-          <img src="img/coding.jpg">
+          <p>This is the template of the Geomatics Engineering Student's Association Nepal (GESAN) website template. at the request of GESAN, I made this template. This template was used until the final website of the GESAN was lunched.</p>
+          <img src="img/gesan.png">
         </div>
+        <a href="https://github.com/iamtekson/Online-house-purchasing-website" class="btn btn-primary mt-2">View Git Repo</a>
+        <a href="http://gesan.ml" class="btn btn-success">Visit Website</a>
 
         <!-- Modal footer -->
         <div class="modal-footer">
@@ -353,9 +399,69 @@
   </div>
 
 
+  <!--Contact Me-->
+  <section id="contact">
+    <div class="container padding">
+      <div class="well well-sm">
+        <h1 class="text-primary text-center heading wow fadeInUp">Contact Me</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7 wow slideInLeft">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3514.215414847917!2d83.96974236467051!3d28.261484282565632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995937fcb0643d1%3A0x1b63bf7043241499!2sLamachaur%2C+Pokhara+33700!5e0!3m2!1sen!2snp!4v1530104874316"
+            width="100%" height="315" frameborder="0" style="border:0"></iframe>
+        </div>
+
+        <div class="col-md-5 wow slideInRight">
+          <h3 class="text-primary wow fadeInUp">Get in Touch</h3>
+          <form id="contact-form" method="post" action="/form.php">
+            <div class="form-group">
+              <input name="name" type="text" class="form-control" name="" value="" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input name="email" type="email" class="form-control" value="" placeholder="Your E-mail" required>
+            </div>
+            <div class="form-group">
+              <input name="" type="tel" class="form-control" value="" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-control" type="text" name="" rows="3"
+                placeholder="Message"></textarea>
+            </div>
+            <input type="submit" class="btn btn-outline-primary submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="my-4">
 
 
-<!--Footer-->
+  <!--Conntect-->
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2 class="text-primary animated fadeInUp">Connect</h2>
+      </div>
+      <div class="col-12 social">
+        <a href="https://facebook.com/iamtekson" target="_blank"><i class="fab fa-facebook wow rotateIn"></i></a>
+        <a href="https://twitter.com/iamtekson" target="_blank"><i class="fab fa-twitter wow rotateIn"></i></a>
+        <a href="https://plus.google.com/u/0/105225708150638237163" target="_blank"><i
+            class="fab fa-google-plus-g wow rotateIn"></i></a>
+        <a href="https://www.instagram.com/iamtekson/"><i class="fab fa-instagram wow rotateIn" target="_blank"></i></a>
+        <a href="https://www.youtube.com/channel/UCCV3Wo1EDp--JZTwf0TcFpg?view_as=subscriber" target="_blank"><i
+            class="fab fa-youtube wow rotateIn"></i></a>
+        <a href="https://github.com/iamtekson"><i class="fab fa-github wow rotateIn" target="_blank"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--Footer-->
   <footer class="text-white">
     <div class="container-fluid">
       <div class="row text-center">
