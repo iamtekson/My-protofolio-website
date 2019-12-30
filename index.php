@@ -27,204 +27,18 @@
 
 
   <!--Title of the Website-->
-  <title>Tekson, One creative mind !!!</title>
+  <title>Tek Bahadur Kshetri, Protofolio</title>
 
 </head>
 <!--End of head Section-->
 
 <body>
-
-
-  <!--Navigation -->
-  <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow-lg">
-    <div class="container-fluid animated fadeInUp" data-wow-duration=".7s">
-      <a class="navbar-brand" href="#top">Tekson</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#top" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <div class="dropdown">
-              <a class="dropdown-toggle nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false" href="publication.html">
-                Publications
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item nav-link" href="research.html">Research</a>
-                <a class="dropdown-item nav-link" href="articles.html">Articles</a>
-                <a class="dropdown-item nav-link" href="blog.html">Blog</a>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link">My Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="test.php" class="nav-link">Test</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!--Main content-->
-  <div class="container-fluid main-1" id="top">
-    <div class="main-2">
-      <h3 class="text-light wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".5s">I am</h3>
-      <h1 class="text-white wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1s">Tek Bahadur Kshetri</h1>
-      <p class="text-muted wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s"><i>Student of Geomatics
-          Engineering</i></p>
-      <a href="#my-self" class="btn btn-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">Know More</a>
-    </div>
-  </div>
-
-
-  <!--First Content-->
-  <div class="container padding" id="my-self">
-    <h1 class="col-12 text-primary text-center heading padding wow fadeInUp"> My Self</h1>
-
-    <div class="row">
-      <!--First Part-->
-      <div class="col-lg-7 col-md-12 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".1s">
-        <div class="slider1">
-          <div class="carousel slide" data-ride="carousel" id="slider">
-
-            <!--The Slider-->
-            <div class="carousel-inner shadow p-3">
-              <div class="carousel-item active">
-                <img src="img/1.jpg" alt="My Photo">
-              </div>
-              <div class="carousel-item">
-                <img src="img/13.jpg" alt="My Photo">
-              </div>
-              <div class="carousel-item">
-                <img src="img/3.jpg" alt="My Photo">
-              </div>
-              <div class="carousel-item">
-                <img src="img/12.jpg" alt="My Photo">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Second Part-->
-      <div class="col-lg-4 col-md-12 shadow second wow slideInRight" data-wow-duration="2s" data-wow-delay=".1s">
-        <div class="container bg-primary pl-5 pt-3">
-          <div class="text-white pb-1 border-bottom">
-            <h4>Name</h4>
-            <p>Tek Bahadur Kshetri</p>
-          </div>
-          <div class="text-white pb-1 pt-1 border-bottom">
-            <h4>Nickname</h4>
-            <p>"Tekson"</p>
-          </div>
-          <div class="text-white pb-1 pt-1 border-bottom">
-            <h4>Birth date</h4>
-            <p>1998-02-13</p>
-          </div>
-          <div class="text-white pb-1 pt-1 border-bottom">
-            <h4>E-mail</h4>
-            <p>mail@tekkshetri.com.np</p>
-          </div>
-          <div class="text-white pb-1 pt-1 border-bottom">
-            <h4>Phone Nos.</h4>
-            <p>(+977) 9809105085</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!--My Skills-->
-  <!-- <div class="my-skills padding" id="my-skill">
-    <div class="container">
-      <h1 class="text-primary text-center heading wow fadeInUp">My Skills</h1>
-      <h3 class="text-primary">FrontEnd</h3>
-      <div class="row">
-        <div class="progress-left progress-lg col-md-6 wow slideInLeft" data-wow-delay=".1s">
-          <div class="progress-bar bg-primary" style="width: 90%;"> HTML (90%)</div>
-        </div>
-        <div class="progress-right progress-lg col-md-6 wow slideInLeft" data-wow-delay=".3s">
-          <div class="progress-bar bg-info" style="width: 70%;"> CSS (70%)</div>
-        </div>
-        <div class="progress-left progress-lg col-md-6 wow slideInLeft" data-wow-delay=".5s">
-          <div class="progress-bar bg-warning" style="width: 80%;"> Bootstrap (80%)</div>
-        </div>
-        <h3>BackEnd</h3>
-        <div class="progress-right progress-lg col-md-6 wow slideInLeft" data-wow-delay=".7s">
-          <div class="progress-bar bg-success" style="width: 60%;"> WordPress (60%)</div>
-        </div>
-        <div class="progress-left progress-lg col-md-6 wow slideInLeft" data-wow-delay=".9s">
-          <div class="progress-bar bg-secondary" style="width: 30%;"> Javascript (30%)</div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-  <div class="my-skills padding" id="my-skill">
-    <div class="container">
-      <h1 class="text-primary text-center heading wow fadeInUp">Top Skills</h1>
-      <ul>
-        <a href="#">
-          <li>
-            <h3 class="text-light">Geographic Information System (GIS)</h3>
-          </li>
-        </a>
-        <a href="#">
-          <li>
-            <h3 class="text-light">Python</h3>
-          </li>
-        </a>
-        <a href="#">
-          <li>
-            <h3 class="text-light">Django</h3>
-          </li>
-        </a>
-        <a href="#">
-          <li>
-            <h3 class="text-light">JavaScript</h3>
-          </li>
-        </a>
-        <a href="#">
-          <li>
-            <h3 class="text-light">Leaflet</h3>
-          </li>
-        </a>
-        <a href="#">
-          <li>
-            <h3 class="text-light">HTML/CSS/Bootstrap</h3>
-          </li>
-        </a>
-        <a href="#">
-          <li>
-            <h3 class="text-light">Git and Github</h3>
-          </li>
-        </a>
-        <a href="#">
-          <li>
-            <h3 class="text-light">Remote Sensing</h3>
-          </li>
-        </a>
-      </ul>
-    </div>
-  </div>
-
-
-
-
-
+  <?php
+    @include('./_partials/_navbar.php');
+    @include('./_partials/_top-design.php');
+    @include('./_partials/_intro.php');
+    @include('./_partials/_skills.php');
+  ?>
 
   <!-- main works section -->
   <div class="container padding" id="work">
@@ -238,9 +52,9 @@
                 ORDER BY id ASC";
             
             $numberOfRows = mysqli_num_rows(mysqli_query($conn, 'SELECT * FROM myWorks'));
-            
-            $result = mysqli_query($conn, $sql);
             $i = 1;
+
+            $result = mysqli_query($conn, $sql);
             while($row = mysqli_fetch_array($result)){
               echo '<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
                 <div class="card" style="min-width: 18rem;">
@@ -248,14 +62,14 @@
                   <div class="card-body">
                     <h5 class="card-title">'.$row['title'].'</h5>
                     <p class="card-text">'.$row['discription'].'</p>
-                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target=#myModal'. $i.'>Get More</a>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target=#myModal'. $numberOfRows.'>Get More</a>
                   </div>
                 </div>
               </div>';
 
 
               echo '<!-- The Modal -->
-              <div class="modal fade" id=myModal'. $i.'>
+              <div class="modal fade" id=myModal'. $numberOfRows.'>
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
         
@@ -282,7 +96,7 @@
                 </div>
               </div>';
               
-            $i--;
+            $i++;
             $numberOfRows--;
             }
             
@@ -293,13 +107,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
 
 
   <!--My Interests-->
@@ -402,50 +209,9 @@
     </div>
   </div>
 
-
-
-
-
-  <!--Footer-->
-  <footer class="text-white">
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-md-4 wow fadeInUp">
-          <h2>Tekson</h2>
-          <hr class="light">
-          <p>(+977) 98091-05085</p>
-          <p>teksondada@gmail.com</p>
-          <p>lamachour 16 pokhara, 37400</p>
-          <p>Wrc hostel</p>
-        </div>
-        <div class="col-md-4 m-footer wow fadeInUp">
-          <hr class="light">
-          <h5>My Work</h5>
-          <hr class="light">
-          <p><a href="#" data-toggle="modal" data-target="#myModal1">Gesan Website</a></p>
-          <p><a href="#" data-toggle="modal" data-target="#myModal2">Get Your Coordinate</a></p>
-          <p><a href="#" data-toggle="modal" data-target="#myModal3">Other simple Design</a></p>
-        </div>
-        <div class="col-md-4 wow fadeInUp">
-          <hr class="light">
-          <h5>My Interest</h5>
-          <hr class="light">
-          <p>Coding</p>
-          <p>Travelling</p>
-          <p>Music</p>
-          <p>Photography</p>
-        </div>
-        <div class="col-12 wow fadeInUp">
-          <hr class="light-1">
-          <h5> All rights are reserved by &copy; Tekson</h5>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-
-
+  <?php
+    @include('./_partials/_footer.php');
+  ?>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
