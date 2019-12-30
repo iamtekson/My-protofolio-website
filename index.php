@@ -283,6 +283,7 @@
               </div>';
               
             $i++;
+            $numberOfRows--;
             }
             
       ?>
