@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#top" class="nav-link">Home</a>
+            <a href="index.php?page=home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <div class="dropdown">
