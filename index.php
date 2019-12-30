@@ -35,6 +35,23 @@
 <body>
   <?php
     @include('./_partials/_navbar.php');
+
+    // switch case to change the page through navbar
+    $page = $_GET['page'] ?? " ";
+    switch($page)
+    {
+      case "contact":
+      @include("./pages/contact.php");
+      break;
+
+      case "EAR":
+      @include("./templates/pages/EAR.php");
+      break;
+
+      default:
+          @include("./templates/pages/home.php");
+    }
+    
     @include('./_partials/_top-design.php');
     @include('./_partials/_intro.php');
     @include('./_partials/_skills.php');

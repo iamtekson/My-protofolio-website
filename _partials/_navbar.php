@@ -27,7 +27,7 @@
             <a href="work.html" class="nav-link">My Work</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="index.php?page=contact" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
             <a href="test.php" class="nav-link">Test</a>
