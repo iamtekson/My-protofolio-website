@@ -67,7 +67,7 @@
             <a href="contact.html" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="test.php" class="nav-link">PHP test</a>
+            <a href="test.php" class="nav-link">Test</a>
           </li>
         </ul>
       </div>
@@ -225,128 +225,69 @@
 
 
 
+
   <!-- main works section -->
   <div class="container padding" id="work">
-    <h1 class="text-primary text-center heading wow fadeInUp">Main Works</h1>
+    <h1 class="text-primary text-center heading wow fadeInUp">Recent Projects</h1>
     <div class="row">
-      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-        <div class="card" style="min-width: 18rem;">
-          <img class="card-img-top" src="img/web-mapping.JPG" alt="Web-mapping">
-          <div class="card-body">
-            <h5 class="card-title">Web-Mapping</h5>
-            <p class="card-text">As I am from GIS background, I love to do spatial operations. I made a web-map for utility management purpose. This webmap is made by ...</p>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Get More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- The Modal -->
-      <div class="modal fade" id="myModal1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Web-Mapping</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-              <p>As I am from GIS background, I love to do spatial operations. I made a web-map for utility management purpose. This webmap is made with the help of html, css, javascript (leaflet.js) for frontend and Django for backend. I am currently working in this project.</p>
-              <img src="img/web-mapping.JPG">
-            </div>
-            <a href="https://github.com/iamtekson/Utility-Networks-Management-" target="_blank" class="btn btn-success mt-2">View git repo</a>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-        <div class="card" style="min-width: 18rem;">
-          <img class="card-img-top" src="img/real-estate.JPG" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Real Estate Website backend</h5>
-            <p class="card-text">For the practice purpose, I had completed the backend of the real estate website. In this project, Django was used for backend. With the help of ...</p>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Get More</a>
-          </div>
-        </div>
-      </div>
+        <?php
+            @include('./_partials/_db_connect.php');
+            $sql = "SELECT * FROM (
+                    SELECT * FROM myWorks ORDER BY id DESC LIMIT 3
+                ) sub
+                ORDER BY id ASC";
+            
+            $numberOfRows = mysqli_num_rows(mysqli_query($conn, 'SELECT * FROM myWorks'));
+            
+            $result = mysqli_query($conn, $sql);
+            $i = 1;
+            while($row = mysqli_fetch_array($result)){
+              echo '<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
+                <div class="card" style="min-width: 18rem;">
+                  <img class="card-img-top" src="img/works-'.$numberOfRows.'.JPG" alt="Web-mapping">
+                  <div class="card-body">
+                    <h5 class="card-title">'.$row['title'].'</h5>
+                    <p class="card-text">'.$row['discription'].'</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target=#myModal'. $i.'>Get More</a>
+                  </div>
+                </div>
+              </div>';
 
 
-      <!-- The Modal -->
-      <div class="modal fade" id="myModal2">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
+              echo '<!-- The Modal -->
+              <div class="modal fade" id=myModal'. $i.'>
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+        
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">'.$row['title'].'</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <p>'.$row['discription'].'</p>
+                      <img src="img/works-'.$numberOfRows.'.JPG">
+                    </div>
+                    <a href="'.$row['githubLink'].'" target="_blank" class="btn btn-info mt-2">View git repo</a>
+                    <a href="'.$row['liveAt'].'" target="_blank" class="btn btn-success mt-2">Visit Site</a>
+        
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>';
+              
+            $i++;
+            }
+            
+      ?>
 
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Position Finder</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-              <p>This program allow us to find out our location on the basis of lattitude and longitude. It is very
-                simple and easy to use. It gives the instant coordinate of your device. Here I use some javascript code
-                to finding out the location.</p>
-              <img src="img/real-estate.JPG">
-            </div>
-            <a href="https://github.com/iamtekson/Online-house-purchasing-website" class="btn btn-success mt-2">View Git Repo</a>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      
-
-
-      <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-        <div class="card" style="min-width: 18rem;">
-          <img class="card-img-top" src="img/gesan.png" alt="GESAN website">
-          <div class="card-body">
-            <h5 class="card-title">Gesan Website Template</h5>
-            <p class="card-text">This is the template of the Geomatics Engineering Student's Association Nepal (GESAN) website template. at the request of GESAN, ....</p>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Get More</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal3">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Gesan Website Template</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p>This is the template of the Geomatics Engineering Student's Association Nepal (GESAN) website template. at the request of GESAN, I made this template. This template was used until the final website of the GESAN was lunched.</p>
-          <img src="img/gesan.png">
-        </div>
-        <a href="https://github.com/iamtekson/Online-house-purchasing-website" class="btn btn-primary mt-2">View Git Repo</a>
-        <a href="http://gesan.ml" class="btn btn-success">Visit Website</a>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
+     
 
       </div>
     </div>
