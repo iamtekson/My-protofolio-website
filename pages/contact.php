@@ -14,7 +14,7 @@
 
             <div class="col-md-5 wow slideInRight">
                 <h3 class="text-primary wow fadeInUp">Get in Touch</h3>
-                <form id="contact-form" method="post" action="/form.php">
+                <form id="contact-form" method="post" action="../_partials/form.php">
                     <div class="form-group">
                         <input name="name" type="text" class="form-control" name="" value="" placeholder="Your Name"
                             required>

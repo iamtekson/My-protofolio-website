@@ -48,6 +48,22 @@
       @include("./pages/home.php");
       break;
 
+      case "research":
+        @include("./pages/research.php");
+        break;
+
+      case "blog":
+        @include("./pages/blog.php");
+        break;
+
+      case "articles":
+        @include("./pages/articles.php");
+        break;
+
+      case "works":
+        @include("./pages/works.php");
+        break;
+
       default:
           @include("./pages/home.php");
     }

@@ -17,21 +17,21 @@
                 Publications
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item nav-link" href="research.html">Research</a>
-                <a class="dropdown-item nav-link" href="articles.html">Articles</a>
-                <a class="dropdown-item nav-link" href="blog.html">Blog</a>
+                <a class="dropdown-item nav-link" href="index.php?page=research">Research</a>
+                <a class="dropdown-item nav-link" href="index.php?page=articles">Articles</a>
+                <a class="dropdown-item nav-link" href="index.php?page=blog">Blog</a>
               </div>
             </div>
           </li>
           <li class="nav-item">
-            <a href="work.html" class="nav-link">My Work</a>
+            <a href="index.php?page=works" class="nav-link">My Work</a>
           </li>
           <li class="nav-item">
             <a href="index.php?page=contact" class="nav-link">Contact</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="test.php" class="nav-link">Test</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
