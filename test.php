@@ -1,4 +1,8 @@
 <?php
+echo "hello world";
+?>
+
+<?php
 $servername = "localhost";
 $username = "id11898088_admin";
 $password = "admin";
@@ -6,15 +10,9 @@ $password = "admin";
 // Create connection
 $conn = new mysqli($servername, $username, $password);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 echo "Connected successfully";
-?>
 
-<?php
-    // mysqli_select_db ("id11898088_protofolio");
+// mysqli_select_db ("id11898088_protofolio");
 mysqli_select_db($conn, 'id11898088_protofolio') or die(mysqli_error($conn));
 
 $sql = "SELECT * FROM myWorks";
@@ -24,4 +22,3 @@ $sql = "SELECT * FROM myWorks";
         echo "id: " . $row["id"]. " - Name: " . $row["title"]. " " . $row["date"]. "<br>";
     }
 ?>
-

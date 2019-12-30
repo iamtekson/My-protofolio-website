@@ -244,7 +244,7 @@
             while($row = mysqli_fetch_array($result)){
               echo '<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
                 <div class="card" style="min-width: 18rem;">
-                  <img class="card-img-top" src="img/works-'.$numberOfRows.'.JPG" alt="Web-mapping">
+                  <img class="card-img-top" src="img/projects-src-'.$numberOfRows.'.png" alt="Web-mapping">
                   <div class="card-body">
                     <h5 class="card-title">'.$row['title'].'</h5>
                     <p class="card-text">'.$row['discription'].'</p>
@@ -268,7 +268,7 @@
                     <!-- Modal body -->
                     <div class="modal-body">
                       <p>'.$row['discription'].'</p>
-                      <img src="img/works-'.$numberOfRows.'.JPG">
+                      <img src="img/projects-src-'.$numberOfRows.'.png">
                     </div>
                     <a href="'.$row['githubLink'].'" target="_blank" class="btn btn-info mt-2">View git repo</a>
                     <a href="'.$row['liveAt'].'" target="_blank" class="btn btn-success mt-2">Visit Site</a>
@@ -282,7 +282,7 @@
                 </div>
               </div>';
               
-            $i++;
+            $i--;
             $numberOfRows--;
             }
             
