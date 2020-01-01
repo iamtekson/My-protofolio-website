@@ -282,7 +282,7 @@ a.article:hover {
             </nav>
 
             <h2>Add new Project</h2>
-            <form action="./dashboard/projects.php" method="post" enctype='multipart/form-data'>
+            <form action="./dashboard/projects.php" method="post" enctype="multipart/form-data">
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Project Title:</label>
                 <div class="col-sm-10">
@@ -316,10 +316,10 @@ a.article:hover {
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Picture:</label>
                 <div class="col-sm-10">
-                    <input type="file" class="form-control" name='picture' placeholder="Link to view project live">
+                    <input type="file" class="form-control" name="file" placeholder="Relative picture of the project">
                 </div>
             </div>
-            <button type="submit" class="btn btn-info">Submit Project</button>
+            <button type="submit" class="btn btn-info" name='submit'>Submit Project</button>
             </form>
 
        </div>
