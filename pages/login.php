@@ -1,6 +1,6 @@
 <section id="login" class="modal-login">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" action="./pages/auth/validation.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="./img/avatar-login.jpg" alt="Avatar" class="avatar">
