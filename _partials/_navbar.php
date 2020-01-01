@@ -29,9 +29,9 @@
           <li class="nav-item">
             <a href="index.php?page=contact" class="nav-link">Contact</a>
           </li>
-          <!-- <li class="nav-item">
-            <a href="test.php" class="nav-link">Test</a>
-          </li> -->
+          <li class="nav-item login-btn">
+            <a href="#" class="nav-link">Login</a>
+          </li>
         </ul>
       </div>
     </div>

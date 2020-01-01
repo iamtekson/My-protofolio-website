@@ -1,3 +1,8 @@
+$('.login-btn').click(function() {
+  $('#login').css('display', 'block');
+});
+
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
