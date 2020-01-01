@@ -7,7 +7,7 @@
             $sql = "SELECT * FROM (
                     SELECT * FROM myWorks ORDER BY id DESC LIMIT 3
                 ) sub
-                ORDER BY id ASC";
+                ORDER BY id DESC";
             
             $numberOfRows = mysqli_num_rows(mysqli_query($conn, 'SELECT * FROM myWorks'));
             $i = 1;
