@@ -12,7 +12,7 @@
         echo 'username already taken!';
     } else{
         $reg = "insert into superUsers(name, password) values('$name', '$password')";
-        mysqli_query($con, $reg);
+        mysqli_query($conn, $reg);
         echo 'Registration Success!!!';
     }
             
