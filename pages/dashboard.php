@@ -243,7 +243,7 @@ a.article:hover {
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="" class="download">Log Out</a>
+                    <a href="./auth/logout.php" class="download">Log Out</a>
                 </li>
             </ul>
         </nav>
